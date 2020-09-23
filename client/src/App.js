@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import SubHeader from './components/SubHeader';
 import ToDoList from './components/ToDoList';
+import AddToDo from './components/AddToDo';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <SubHeader/>
       <ToDoList />
+      <AddToDo />
     </div>
   );
 }

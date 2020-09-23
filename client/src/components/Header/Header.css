@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  flex-direction: row;
+}
+
+.header__search {
+  width: 50vw;
+}
+
+.header__logo {
+  width: 50vw;
+}
