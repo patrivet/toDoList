@@ -1,5 +1,7 @@
 import React from 'react';
 import './AddToDo.css';
+import store from '../../redux/store';
+import { addToDo } from '../../redux/actions';
 
 const AddToDo = () => {
   let toDo = '';
@@ -7,6 +9,11 @@ const AddToDo = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     // If there is an toDo entered - addToDo
+
+    console.log('INFO: AddToDo.js:: about to dispatch new ToDo...= ' + toDo);
+
+    // pass an action (from the predefined actions)
+    store.dispatch(addToDo(toDo)); // takes one arg. desc (string)
   }
 
   const handleToDo = event => {

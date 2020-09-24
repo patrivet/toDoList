@@ -5,11 +5,12 @@ import ToDoItem from '../ToDoItem';
 // UFN - before using redux - use temp Array here
 
 const tempToDoList = ['Put kettle on', 'Wash the car', 'Run some miles'];
+let nextId = 0;
 
 const ToDoList = () => {
   return (
     tempToDoList.map( toDoItem => {
-      return <ToDoItem toDo={toDoItem}/>
+      return <ToDoItem key={++nextId} toDo={toDoItem}/>
     })
   );
 };
