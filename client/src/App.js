@@ -7,17 +7,12 @@ import AddToDo from './components/AddToDo';
 import store from './redux/store';
 import { Provider } from 'react-redux';
 
-store.subscribe( () => {
-  console.log('INFO: App.js :: Subscribed to the store');
-  console.log(store.getState());
-})
-
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
         <Header />
-        <SubHeader/>
+        <SubHeader />
         <ToDoList />
         <AddToDo />
       </div>
