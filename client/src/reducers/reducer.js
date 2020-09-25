@@ -1,4 +1,4 @@
-import * as actions from './actionTypes';
+import * as actions from '../actions/actionTypes';
 const initialState = { toDos: [] };
 
 /* Note:
@@ -14,6 +14,7 @@ function reducer(state = initialState, action) {
         toDos: [
           ...state.toDos,
           {
+            id: action.id,
             description: action.payload.description,
             isComplete: false,
           },

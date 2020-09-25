@@ -4,7 +4,7 @@ import Header from './components/Header';
 import SubHeader from './components/SubHeader';
 import ToDoList from './components/ToDoList';
 import AddToDo from './components/AddToDo';
-import store from './redux/store';
+import store from './store';
 import { Provider } from 'react-redux';
 
 function App() {

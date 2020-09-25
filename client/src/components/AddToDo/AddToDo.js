@@ -1,17 +1,21 @@
 import React from 'react';
 import './AddToDo.css';
-import store from '../../redux/store';
-import { addToDo } from '../../redux/actions';
+import store from '../../store';
+import { addToDo } from './../../actions/actions';
 
 const AddToDo = () => {
-  let toDo = '';
+  let toDo;
 
   const handleSubmit = (event) => {
     event.preventDefault();
     // If there is an toDo entered - addToDo
-
     // pass an action (from the predefined actions)
-    store.dispatch(addToDo(toDo));
+    if (toDo) {
+      store.dispatch(addToDo(toDo));
+      // clear the content from the input element & clear the toDo local var.
+      document.getElementById('toDoForm').reset();
+      toDo = null;
+    }
   };
 
   const handleToDo = (event) => {
@@ -21,8 +25,8 @@ const AddToDo = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" name="toDo" onChange={handleToDo}></input>
+    <form onSubmit={handleSubmit} id="toDoForm">
+      <input id="myInput" type="text" name="toDo" onChange={handleToDo}></input>
       <button type="submit">+</button>
     </form>
   );
