@@ -1,5 +1,5 @@
 import React from 'react';
-import Search from '../Search';
+import Search from '../../components/Search';
 import './Header.css';
 
 const Header = () => {
@@ -7,11 +7,10 @@ const Header = () => {
     <div className="header">
       <p className="header__logo">LOGO</p>
       <div className="header__search">
-        <Search/>
+        <Search />
       </div>
-
     </div>
-  )
+  );
 };
 
 export default Header;
