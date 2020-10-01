@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header';
-import SubHeader from './components/SubHeader';
-import ToDoList from './components/ToDoList';
-import AddToDo from './components/AddToDo';
+import Header from './containers/Header';
+import SubHeader from './containers/SubHeader';
+import ToDoList from './containers/ToDoList';
+import ToDoForm from './components/ToDoForm';
 import store from './store';
 import { Provider } from 'react-redux';
 
@@ -14,7 +14,7 @@ function App() {
         <Header />
         <SubHeader />
         <ToDoList />
-        <AddToDo />
+        <ToDoForm />
       </div>
     </Provider>
   );
