@@ -1,7 +1,7 @@
 import React from 'react';
 import './ToDoForm.css';
 import store from '../../store';
-import { addToDo } from '../../actions/actions';
+import { addToDo } from '../../actions';
 
 const ToDoForm = () => {
   let toDo;

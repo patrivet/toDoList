@@ -1,6 +1,6 @@
 import React from 'react';
 import store from '../../store';
-import { toggleToDo } from '../../actions/actions';
+import { toggleToDo } from '../../actions';
 import './ToDoItem.css';
 
 const ToDoItem = ({ toDo }) => {

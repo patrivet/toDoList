@@ -6,7 +6,7 @@ let nextId = 0;
   with a type and payload -with desc (isComplete is initialised in the reducer).
 */
 export const addToDo = description => ({
-  type: actions.ADD_TODO, // ? past tense could instead be used: "TO_DO_ADDED"
+  type: actions.ADD_TODO, // Past tense could instead be used: "TO_DO_ADDED"
   id: nextId++,
   payload: {
     description,

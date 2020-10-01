@@ -6,7 +6,7 @@ const initialState = { toDos: [] };
   so values outside the payload, isComplete init to false.. etc
   are set here.
 */
-function reducer(state = initialState, action) {
+function toDos(state = initialState, action) {
   switch (action.type) {
     case actions.ADD_TODO:
       return {
@@ -40,19 +40,4 @@ function reducer(state = initialState, action) {
   }
 }
 
-let state = {
-  toDos: [
-    {
-      id: 0,
-      description: 'Cook dinner',
-      isComplete: false,
-    },
-    {
-      id: 0,
-      description: 'Drink wine',
-      isComplete: false,
-    },
-  ],
-};
-
-export default reducer;
+export default toDos;
