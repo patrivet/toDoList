@@ -6,13 +6,20 @@
   margin: 2px;
 }
 
-.toDo__text, .toDo__tickBox {
+/* Uncompleted toDo */
+.toDo__text,
+.toDo__tickBox {
   color: blue;
   border: 1px solid blue;
   border-radius: 4px;
   padding: 8px 8px;
 }
 
+/* Completed toDo */
+.toDo__text.toDo--isComplete {
+  color: rgba(150, 143, 143, 0.899);
+  text-decoration: line-through;
+}
 /*
   alignment:-
   see https://stackoverflow.com/questions/46569692/displaying-flexbox-centered-but-align-items-left-like-text-align-left

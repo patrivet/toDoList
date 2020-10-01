@@ -22,7 +22,9 @@ const ToDoItem = ({ toDo }) => {
           ></input>
         </form>
       </div>
-      <div className="toDo__text">{toDo.description}</div>
+      <div className={`toDo__text ${toDo.isComplete && 'toDo--isComplete'}`}>
+        {toDo.description}
+      </div>
     </div>
   );
 };
