@@ -12,3 +12,12 @@ export const addToDo = (description) => ({
     description,
   },
 });
+
+export const toggleToDo = (id) => {
+  return {
+    type: actions.TOGGLE_TODO,
+    payload: {
+      id,
+    },
+  };
+};
