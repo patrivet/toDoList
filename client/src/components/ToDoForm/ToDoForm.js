@@ -1,12 +1,12 @@
 import React from 'react';
-import './AddToDo.css';
+import './ToDoForm.css';
 import store from '../../store';
-import { addToDo } from './../../actions/actions';
+import { addToDo } from '../../actions/actions';
 
-const AddToDo = () => {
+const ToDoForm = () => {
   let toDo;
 
-  const handleSubmit = (event) => {
+  const handleSubmit = event => {
     event.preventDefault();
     // If there is an toDo entered - addToDo
     // pass an action (from the predefined actions)
@@ -18,7 +18,7 @@ const AddToDo = () => {
     }
   };
 
-  const handleToDo = (event) => {
+  const handleToDo = event => {
     const { value } = event.target;
     // If there is an toDo entered -store here.
     toDo = value;
@@ -32,4 +32,4 @@ const AddToDo = () => {
   );
 };
 
-export default AddToDo;
+export default ToDoForm;

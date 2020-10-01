@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import AddToDo from './AddToDo';
+import AddToDo from './ToDoForm';
 
-describe('AddToDo', () => {
+describe('ToDoForm', () => {
   test('matches snapshot', () => {
-    const wrapper = shallow(<AddToDo />);
+    const wrapper = shallow(<ToDoForm />);
     expect(wrapper).toMatchSnapshot();
   });
 });
