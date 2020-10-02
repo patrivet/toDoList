@@ -1,10 +1,10 @@
 import * as actions from '../actions/actionTypes';
-const initialState = { toDos: [] };
+const initialState = { toDos: [], filterOn: false };
 
 /* Note:
   The reducer is the place for business logic
-  so values outside the payload, isComplete init to false.. etc
-  are set here.
+  so values outside the payload, e.g isComplete is init
+  to false here.
 */
 function toDos(state = initialState, action) {
   switch (action.type) {
@@ -34,7 +34,13 @@ function toDos(state = initialState, action) {
         ),
       };
 
-    // All other action types - return state/store
+    case actions.TOGGLE_FILTER:
+      return {
+        ...state,
+        filterOn: !state.filterOn,
+      };
+
+    // All other action types, or none specified; return state/store
     default:
       return state;
   }

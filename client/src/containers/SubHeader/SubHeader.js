@@ -1,7 +1,12 @@
 import React from 'react';
+import CompletedToggle from '../../components/CompletedToggle';
 
 const SubHeader = () => {
-  return <div>SubHeader</div>;
+  return (
+    <div>
+      <CompletedToggle />
+    </div>
+  );
 };
 
 export default SubHeader;

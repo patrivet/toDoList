@@ -13,11 +13,13 @@ export const addToDo = description => ({
   },
 });
 
-export const toggleToDo = id => {
-  return {
-    type: actions.TOGGLE_TODO,
-    payload: {
-      id,
-    },
-  };
-};
+export const toggleToDo = id => ({
+  type: actions.TOGGLE_TODO,
+  payload: {
+    id,
+  },
+});
+
+export const filterToDos = () => ({
+  type: actions.TOGGLE_FILTER,
+});
