@@ -15,8 +15,6 @@ const ToDoItem = ({ toDo }) => {
         <form>
           <input
             onChange={handleToDoClick}
-            id="toDoCheck"
-            name="toDoCheck"
             type="checkbox"
             checked={toDo.isComplete}
           ></input>
