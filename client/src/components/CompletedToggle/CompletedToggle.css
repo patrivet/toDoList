@@ -10,12 +10,17 @@
   display: flex;
 }
 
+.container__toggleLabel {
+  cursor: pointer;
+}
+
 /* Switch */
 .container__switch input {
   position: absolute;
   opacity: 0;
 }
 .container__switch {
+  cursor: pointer;
   display: inline-block;
   font-size: 20px;
   height: 1em;

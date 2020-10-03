@@ -3,28 +3,34 @@ import store from '../../store';
 import { filterToDos } from '../../actions';
 import './CompletedToggle.css';
 
-let inputState = false;
+let toggleState = false;
 
 const toggleFilter = () => {
   store.dispatch(filterToDos());
-  inputState = !inputState;
+  // Toggle the toggleState prop.
+  toggleState = !toggleState;
 };
 
-const toggleInput = () => {
-  // toggle the inputState flag.
-  document.getElementById('toggleCheckbox').checked = !inputState;
+const handleLabelClick = () => {
+  // toggle the 'toggleCheckbox' input element
+  document.getElementById('toggleCheckbox').checked = !toggleState;
+  // toggle the toggleState flag.
   toggleFilter();
 };
 
 const CompletedToggle = () => {
   return (
     <div className="container">
-      <p onClick={toggleInput}>All</p>
+      <p className="container__toggleLabel" onClick={handleLabelClick}>
+        All
+      </p>
       <label className="container__switch">
-        <input type="checkbox" id="toggleCheckbox" onChange={toggleFilter} />
+        <input type="checkbox" id="toggleCheckbox" onClick={toggleFilter} />
         <div></div>
       </label>
-      <p onClick={toggleInput}>Completed</p>
+      <p className="container__toggleLabel" onClick={handleLabelClick}>
+        Completed
+      </p>
     </div>
   );
 };
