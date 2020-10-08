@@ -15,7 +15,9 @@ const ToDoList = () => {
   if (searchText) {
     searchText = searchText.trim();
     if (searchText.length) {
-      toDos = toDos.filter(toDo => toDo.description.indexOf(searchText) != -1);
+      toDos = toDos.filter(toDo =>
+        toDo.description.split(' ').includes(searchText)
+      );
     }
   }
 
