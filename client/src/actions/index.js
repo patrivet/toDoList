@@ -23,3 +23,10 @@ export const toggleToDo = id => ({
 export const filterToDos = () => ({
   type: actions.TOGGLE_FILTER,
 });
+
+export const searchToDos = searchText => ({
+  type: actions.SEARCH_TODOS,
+  payload: {
+    searchText,
+  },
+});

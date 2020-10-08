@@ -1,5 +1,5 @@
 import * as actions from '../actions/actionTypes';
-const initialState = { toDos: [], filterOn: false };
+const initialState = { toDos: [], filterOn: false, searchText: '' };
 
 /* Note:
   The reducer is the place for business logic
@@ -38,6 +38,14 @@ function toDos(state = initialState, action) {
       return {
         ...state,
         filterOn: !state.filterOn,
+      };
+
+    case actions.SEARCH_TODOS:
+      console.log('REDUCER: in case: SEARCH_TODOS..');
+      console.log(action.payload.searchText);
+      return {
+        ...state,
+        searchText: action.payload.searchText,
       };
 
     // All other action types, or none specified; return state/store
