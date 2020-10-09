@@ -1,10 +1,10 @@
 import React from 'react';
-import CompletedToggle from '../../components/CompletedToggle';
+import Filter from '../../components/Filter';
 
 const SubHeader = () => {
   return (
     <div>
-      <CompletedToggle />
+      <Filter />
     </div>
   );
 };

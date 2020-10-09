@@ -8,7 +8,15 @@ const ToDoList = () => {
   // Get the toDos from the store.
   let toDos = useSelector(state => state.toDos);
   // Filter the toDos based on filter setting in store.
-  const filterOn = useSelector(state => state.filterOn);
+
+  // Optionally filter to show completed, or uncompleted
+  const filter = useSelector(state => state.filter);
+  if (filter !== 'all') {
+    const filterForCompleted = filter === 'complete' ? true : false;
+    toDos = toDos.filter(toDo => {
+      return toDo.isComplete === filterForCompleted;
+    });
+  }
 
   // Filter results if there's search text
   let searchText = useSelector(state => state.searchText);
@@ -21,14 +29,9 @@ const ToDoList = () => {
     }
   }
 
-  return (
-    toDos
-      // Filter to show only completed, or otherwise all
-      .filter(toDoItem => (filterOn ? toDoItem.isComplete : true))
-      .map(toDoItem => {
-        return <ToDoItem key={++nextId} toDo={toDoItem} />;
-      })
-  );
+  return toDos.map(toDoItem => {
+    return <ToDoItem key={++nextId} toDo={toDoItem} />;
+  });
 };
 
 export default ToDoList;

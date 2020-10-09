@@ -1,5 +1,5 @@
 import * as actions from '../actions/actionTypes';
-const initialState = { toDos: [], filterOn: false, searchText: '' };
+const initialState = { toDos: [], filter: 'all', searchText: '' };
 
 /* Note:
   The reducer is the place for business logic
@@ -37,11 +37,10 @@ function toDos(state = initialState, action) {
     case actions.TOGGLE_FILTER:
       return {
         ...state,
-        filterOn: !state.filterOn,
+        filter: action.payload.filter,
       };
 
     case actions.SEARCH_TODOS:
-      console.log(`REDUCER: [SEARCH_TODOS] for =${action.payload.searchText}`);
       return {
         ...state,
         searchText: action.payload.searchText,

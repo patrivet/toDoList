@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { searchToDos } from '../../actions';
 import store from '../../store';
 import './Search.css';
@@ -8,7 +8,7 @@ import TextField from '@material-ui/core/TextField';
 const Search = () => {
   const handleSearchInput = e => {
     // Store the search string and search ??
-    const { name, value } = e.target;
+    const { value } = e.target;
     store.dispatch(searchToDos(value));
   };
 

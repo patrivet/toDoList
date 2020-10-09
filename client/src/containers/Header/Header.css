@@ -1,12 +1,14 @@
 .header {
   display: flex;
-  flex-direction: row;
-}
-
-.header__search {
-  width: 50vw;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .header__logo {
+  width: 50vw;
+  float: left;
+}
+
+.header__search {
   width: 50vw;
 }

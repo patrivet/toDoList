@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import CompletedToggle from './CompletedToggle';
+import Filter from './Filter';
 
-describe('CompletedToggle', () => {
+describe('Filter', () => {
   test('matches snapshot', () => {
-    const wrapper = shallow(<CompletedToggle />);
+    const wrapper = shallow(<Filter />);
     expect(wrapper).toMatchSnapshot();
   });
 });
