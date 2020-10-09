@@ -1,0 +1,19 @@
+.searchForm__reset {
+  width: 25px;
+  height: 25px;
+  display: none;
+}
+
+.searchForm__reset.show {
+  display: inline-block;
+}
+
+/* Turn off input border */
+#searchForm__input {
+  border: none;
+}
+
+#outlined-search {
+  border: none;
+  outline: none;
+}

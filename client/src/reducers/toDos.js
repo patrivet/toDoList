@@ -41,8 +41,7 @@ function toDos(state = initialState, action) {
       };
 
     case actions.SEARCH_TODOS:
-      console.log('REDUCER: in case: SEARCH_TODOS..');
-      console.log(action.payload.searchText);
+      console.log(`REDUCER: [SEARCH_TODOS] for =${action.payload.searchText}`);
       return {
         ...state,
         searchText: action.payload.searchText,
