@@ -1,0 +1,11 @@
+.toDoListContainer {
+  display: grid;
+  grid-template-columns: auto 98%;
+
+  /* margin on the grid items is used instead of this:
+  grid-column-gap: 30px;
+  grid-row-gap: 20px; */
+
+  margin: 0 25%;
+  justify-content: center;
+}

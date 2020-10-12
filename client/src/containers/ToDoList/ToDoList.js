@@ -29,9 +29,13 @@ const ToDoList = () => {
     }
   }
 
-  return toDos.map(toDoItem => {
-    return <ToDoItem key={++nextId} toDo={toDoItem} />;
-  });
+  return (
+    <div className="toDoListContainer">
+      {toDos.map(toDoItem => {
+        return <ToDoItem key={++nextId} toDo={toDoItem} />;
+      })}
+    </div>
+  );
 };
 
 export default ToDoList;

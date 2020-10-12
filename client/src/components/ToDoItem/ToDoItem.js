@@ -10,20 +10,18 @@ const ToDoItem = ({ toDo }) => {
   };
 
   return (
-    <div className="toDo">
+    <>
       <div className="toDo__tickBox">
-        <form>
-          <input
-            onChange={handleToDoClick}
-            type="checkbox"
-            checked={toDo.isComplete}
-          ></input>
-        </form>
+        <input
+          onChange={handleToDoClick}
+          type="checkbox"
+          checked={toDo.isComplete}
+        ></input>
       </div>
       <div className={`toDo__text ${toDo.isComplete && 'toDo--isComplete'}`}>
         {toDo.description}
       </div>
-    </div>
+    </>
   );
 };
 
