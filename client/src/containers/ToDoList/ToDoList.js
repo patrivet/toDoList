@@ -30,10 +30,12 @@ const ToDoList = () => {
   }
 
   return (
-    <div className="toDoListContainer">
-      {toDos.map(toDoItem => {
-        return <ToDoItem key={++nextId} toDo={toDoItem} />;
-      })}
+    <div className="toDoListMasterContainer">
+      <div className="toDoListContainer">
+        {toDos.map(toDoItem => {
+          return <ToDoItem key={++nextId} toDo={toDoItem} />;
+        })}
+      </div>
     </div>
   );
 };
