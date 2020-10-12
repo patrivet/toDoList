@@ -1,0 +1,25 @@
+#toDoForm {
+  display: grid;
+  /* Grid Columns: give almost all width to toDo input */
+  grid-template-columns: 98% auto;
+  /* Set left/right 25% margin to push form container into center */
+  margin: 0 25%;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+#description_input,
+.description_submit {
+  box-shadow: 0px 10px 4px -9px rgba(153, 145, 153, 1);
+}
+
+#description_input {
+  padding: 19px 19px !important;
+  border: 1px dashed #673ab8;
+  border: 0 !important;
+  border-radius: 5px;
+}
+
+.description_submit {
+  background-color: #673ab8 !important;
+}

@@ -2,6 +2,8 @@ import React from 'react';
 import './ToDoForm.css';
 import store from '../../store';
 import { addToDo } from '../../actions';
+import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
 
 const ToDoForm = () => {
   let toDo;
@@ -29,8 +31,21 @@ const ToDoForm = () => {
 
   return (
     <form onSubmit={handleSubmit} id="toDoForm">
-      <input id="description_input" type="text" name="toDo"></input>
-      <button type="submit">+</button>
+      {/* <input id="description_input" type="text" name="toDo"></input> */}
+      <TextField
+        id="description_input"
+        size="small"
+        variant="outlined"
+        name="toDo"
+      ></TextField>
+      <Button
+        className="description_submit"
+        type="submit"
+        variant="contained"
+        color="primary"
+      >
+        +
+      </Button>
     </form>
   );
 };
