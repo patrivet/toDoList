@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  background-color: #fbfafc;
+}
+
+.AppContainer {
+  background-color: #fbfafc;
+  height: 100vh;
 }
 
 .App-logo {

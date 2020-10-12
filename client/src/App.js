@@ -9,14 +9,16 @@ import { Provider } from 'react-redux';
 
 function App() {
   return (
-    <Provider store={store}>
-      <div className="App">
-        <Header />
-        <SubHeader />
-        <ToDoList />
-        <ToDoForm />
-      </div>
-    </Provider>
+    <div className="AppContainer">
+      <Provider store={store}>
+        <div className="App">
+          <Header />
+          <SubHeader />
+          <ToDoList />
+          <ToDoForm />
+        </div>
+      </Provider>
+    </div>
   );
 }
 
