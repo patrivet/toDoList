@@ -4,6 +4,8 @@ import store from '../../store';
 import { addToDo } from '../../actions';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
+import Create from '@material-ui/icons/Create';
+import InputAdornment from '@material-ui/core/InputAdornment';
 
 const ToDoForm = () => {
   let toDo;
@@ -37,7 +39,15 @@ const ToDoForm = () => {
         size="small"
         variant="outlined"
         name="toDo"
+        InputProps={{
+          startAdornment: (
+            <InputAdornment className="abc123" position="start">
+              <Create />
+            </InputAdornment>
+          ),
+        }}
       ></TextField>
+
       <Button
         className="description_submit"
         type="submit"

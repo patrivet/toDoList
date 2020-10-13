@@ -13,6 +13,10 @@
   box-shadow: 0px 10px 4px -9px rgba(153, 145, 153, 1);
 }
 
+.MuiInputBase-root {
+  box-shadow: 0px 10px 4px -9px rgba(153, 145, 153, 1);
+}
+
 #description_input {
   padding: 19px 19px !important;
   border: 1px dashed #673ab8;
