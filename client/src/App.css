@@ -1,9 +1,33 @@
+@import './App-variables.css';
+
 .App {
 }
 
 .AppContainer {
-  background-color: #fbfafc;
+  background-color: var(--background-color);
+  color: var(--text-color);
   height: 100vh;
+}
+
+/* Material UI components */
+.MuiInputBase-input {
+  /* Determines input text - e.g. text inside toDo form input, search text */
+  color: var(--text-color) !important;
+}
+
+.MuiInputBase-root {
+  /* Determines icon color - e.g. pen icon in toDo form input */
+  color: var(--icon-color) !important;
+}
+
+.MuiRadio-colorSecondary.Mui-checked {
+  /* Determines input-radio-color: (selected) */
+  color: var(--radio-btn-selected-color) !important;
+}
+
+.MuiIconButton-colorSecondary {
+  /* Determines input-radio-color: (un-selected) */
+  color: var(--radio-btn-unselected-color) !important;
 }
 
 .App-logo {

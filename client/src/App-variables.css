@@ -1,0 +1,43 @@
+/* Define global variable colors */
+:root {
+  --primary-color: #673ab8;
+
+  /* Weak colour for backgrounds */
+  --tenary-color: #fbfafc;
+}
+
+/* Colors for light-theme */
+.AppContainer {
+  --text-color: black;
+  --background-color: var(--tenary-color);
+  --icon-color: black;
+  --radio-btn-selected-color: var(--primary-color);
+  --radio-btn-unselected-color: #757172;
+
+  --border-color: grey; /* For the materialUI input textfields */
+
+  --label-color: WHITE;
+
+  /* out of use UFN */
+  /*
+  --box-shadow-color: grey;
+  */
+}
+
+/* Dark theme colors */
+.AppContainer.dark-theme {
+  --text-color: white;
+  --background-color: black;
+  --icon-color: white;
+  --radio-btn-selected-color: white;
+  --radio-btn-unselected-color: #757172;
+
+  --border-color: grey; /* For the materialUI input textfields */
+
+  --label-color: WHITE;
+
+  /* out of use UFN */
+  /*
+  --box-shadow-color: grey;
+  */
+}
