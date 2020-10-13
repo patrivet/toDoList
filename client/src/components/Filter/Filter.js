@@ -17,7 +17,7 @@ const Filter = () => {
   };
 
   return (
-    <div className="container">
+    <div className="filterContainer">
       <FormControl component="fieldset">
         <FormLabel component="legend">Show</FormLabel>
         <RadioGroup

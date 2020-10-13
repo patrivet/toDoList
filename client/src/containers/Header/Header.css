@@ -4,11 +4,7 @@
   align-items: flex-start;
 }
 
-.header__logo {
-  width: 50vw;
-  float: left;
-}
-
-.header__search {
-  width: 50vw;
+.header__icon {
+  margin-left: 10px;
+  margin-top: 10px;
 }

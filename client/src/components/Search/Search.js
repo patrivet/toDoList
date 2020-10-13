@@ -2,7 +2,6 @@ import React from 'react';
 import { searchToDos } from '../../actions';
 import store from '../../store';
 import './Search.css';
-//import HighlightOffRoundedIcon from '@material-ui/icons/HighlightOffRounded';
 import TextField from '@material-ui/core/TextField';
 
 const Search = () => {
