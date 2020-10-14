@@ -1,3 +1,5 @@
+@import '../../App-variables.css';
+
 #toDoForm {
   display: grid;
   /* Grid Columns: give almost all width to toDo input */
@@ -23,5 +25,5 @@
 }
 
 .description_submit {
-  background-color: #673ab8 !important;
+  background-color: var(--primary-color) !important;
 }

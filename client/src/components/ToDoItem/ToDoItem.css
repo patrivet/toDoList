@@ -1,7 +1,9 @@
+@import '../../App-variables.css';
+
 /* Uncompleted toDo */
 .toDo__text,
 .toDo__tickBox {
-  border: 1px solid #673ab8;
+  border: 1px solid var(--primary-color);
   border-radius: 4px;
   padding: 18px 18px;
   margin: 10px 17px;

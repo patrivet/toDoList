@@ -1,8 +1,5 @@
 @import './App-variables.css';
 
-.App {
-}
-
 .AppContainer {
   background-color: var(--background-color);
   color: var(--text-color);
@@ -28,6 +25,16 @@
 .MuiIconButton-colorSecondary {
   /* Determines input-radio-color: (un-selected) */
   color: var(--radio-btn-unselected-color) !important;
+}
+
+/* Determines form label* color when not in focus (* e.g. Show above radio button group )*/
+.MuiFormLabel-root {
+  color: var(--form-label-color) !important;
+}
+
+/* Determines form label* color when IN focus */
+.MuiFormLabel-root.Mui-focused {
+  color: var(--form-label-focused-color) !important;
 }
 
 .App-logo {

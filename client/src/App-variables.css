@@ -13,31 +13,27 @@
   --icon-color: black;
   --radio-btn-selected-color: var(--primary-color);
   --radio-btn-unselected-color: #757172;
-
   --border-color: grey; /* For the materialUI input textfields */
-
-  --label-color: WHITE;
-
-  /* out of use UFN */
-  /*
-  --box-shadow-color: grey;
-  */
+  --label-color: white;
+  --form-label-color: #737374;
+  --form-label-focused-color: #3f51b5;
+  /* out of use UFN
+    --box-shadow-color: grey; */
 }
 
 /* Dark theme colors */
 .AppContainer.dark-theme {
+  --primary-color: #bc86fc; /* Purple 200 */
   --text-color: white;
-  --background-color: black;
+  --background-color: #121212; /* dark grey */
   --icon-color: white;
   --radio-btn-selected-color: white;
   --radio-btn-unselected-color: #757172;
-
   --border-color: grey; /* For the materialUI input textfields */
+  --label-color: white;
+  --form-label-color: #737374;
+  --form-label-focused-color: #90caf9;
 
-  --label-color: WHITE;
-
-  /* out of use UFN */
-  /*
-  --box-shadow-color: grey;
-  */
+  /* out of use UFN
+  --box-shadow-color: grey; */
 }

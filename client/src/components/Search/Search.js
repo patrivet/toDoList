@@ -3,6 +3,27 @@ import { searchToDos } from '../../actions';
 import store from '../../store';
 import './Search.css';
 import TextField from '@material-ui/core/TextField';
+import { withStyles } from '@material-ui/core/styles';
+import * as colors from '../../config/ColorVariables';
+
+const CssTextField = withStyles({
+  root: {
+    '& label.Mui-focused': {
+      color: colors.click_color,
+    },
+    '& .MuiOutlinedInput-root': {
+      '& fieldset': {
+        borderColor: colors.border_color,
+      },
+      '&:hover fieldset': {
+        borderColor: colors.hover_color,
+      },
+      '&.Mui-focused fieldset': {
+        borderColor: colors.click_color,
+      },
+    },
+  },
+})(TextField);
 
 const Search = () => {
   const handleSearchInput = e => {
@@ -13,7 +34,7 @@ const Search = () => {
 
   return (
     <div className="outlined-search-con">
-      <TextField
+      <CssTextField
         id="outlined-search"
         label="Search"
         type="search"
