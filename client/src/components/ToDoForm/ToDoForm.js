@@ -56,6 +56,7 @@ const ToDoForm = () => {
         size="small"
         variant="outlined"
         name="toDo"
+        autoComplete="off"
         InputProps={{
           startAdornment: (
             <InputAdornment position="start">

@@ -40,6 +40,7 @@ const Search = () => {
         type="search"
         variant="outlined"
         onChange={handleSearchInput}
+        autoComplete="off"
       />
     </div>
   );
