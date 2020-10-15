@@ -32,9 +32,12 @@ const ToDoList = () => {
   return (
     <div className="toDoListMasterContainer">
       <div className="toDoListContainer">
-        {toDos.map(toDoItem => {
-          return <ToDoItem key={++nextId} toDo={toDoItem} />;
-        })}
+        {toDos
+          /* Sort toDos by creation date */
+          .sort((a, b) => (a.created < b.created ? 1 : -1))
+          .map(toDoItem => {
+            return <ToDoItem key={++nextId} toDo={toDoItem} />;
+          })}
       </div>
     </div>
   );

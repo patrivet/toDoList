@@ -22,6 +22,7 @@ function toDos(state = initialState, action) {
             id: action.id,
             description: action.payload.description,
             isComplete: false,
+            created: Date.now(),
           },
         ],
       };
