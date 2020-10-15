@@ -14,9 +14,9 @@ const ColorThemeToggle = () => {
 
   const PurpleSwitch = withStyles({
     switchBase: {
-      color: primary_color, // was purple[500]
+      color: primary_color,
       '&$checked': {
-        color: primary_color, // previously: purple[800]
+        color: primary_color,
       },
       '&$checked + $track': {
         backgroundColor: primary_color,

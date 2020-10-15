@@ -1,7 +1,8 @@
-// Function to return a requested component-color for a given color-theme (light or dark)
+/* Function to return a requested component-color for a light OR dark color-theme (controlled via 2nd parameter)
+This is designed for setting colors of materialUI components. */
 
-// MaterialUI colors for input (text) field
-// Light theme __L
+// Light theme colors __L
+// Note: border, click & primary here are MaterialUI colors for input (text) field
 const hover_color__L = 'black';
 const border_color__L = '#BDBDBD';
 const click_color__L = '#3F51B5'; // blue
