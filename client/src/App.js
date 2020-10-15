@@ -4,6 +4,7 @@ import Header from './containers/Header';
 import SubHeader from './containers/SubHeader';
 import ToDoList from './containers/ToDoList';
 import ToDoForm from './components/ToDoForm';
+import ColorThemeToggle from './components/ColorThemeToggle';
 import store from './store';
 import { Provider } from 'react-redux';
 
@@ -16,6 +17,7 @@ function App() {
           <SubHeader />
           <ToDoList />
           <ToDoForm />
+          <ColorThemeToggle />
         </div>
       </Provider>
     </div>

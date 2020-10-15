@@ -1,5 +1,10 @@
 import * as actions from '../actions/actionTypes';
-const initialState = { toDos: [], filter: 'all', searchText: '' };
+const initialState = {
+  toDos: [],
+  filter: 'all',
+  searchText: '',
+  isLightThemeOn: true,
+};
 
 /* Note:
   The reducer is the place for business logic
@@ -44,6 +49,12 @@ function toDos(state = initialState, action) {
       return {
         ...state,
         searchText: action.payload.searchText,
+      };
+
+    case actions.TOGGLE_COLOR_THEME:
+      return {
+        ...state,
+        isLightThemeOn: action.payload.toggleSetting,
       };
 
     // All other action types, or none specified; return state/store

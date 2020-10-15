@@ -33,3 +33,10 @@ export const searchToDos = searchText => ({
     searchText,
   },
 });
+
+export const toggleColorTheme = toggleSetting => ({
+  type: actions.TOGGLE_COLOR_THEME,
+  payload: {
+    toggleSetting,
+  },
+});

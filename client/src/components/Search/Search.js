@@ -1,31 +1,34 @@
 import React from 'react';
-import { searchToDos } from '../../actions';
+import { searchToDos, toggleColorTheme } from '../../actions';
 import store from '../../store';
+import { useSelector } from 'react-redux';
 import './Search.css';
 import TextField from '@material-ui/core/TextField';
 import { withStyles } from '@material-ui/core/styles';
-import * as colors from '../../config/ColorVariables';
-
-const CssTextField = withStyles({
-  root: {
-    '& label.Mui-focused': {
-      color: colors.click_color,
-    },
-    '& .MuiOutlinedInput-root': {
-      '& fieldset': {
-        borderColor: colors.border_color,
-      },
-      '&:hover fieldset': {
-        borderColor: colors.hover_color,
-      },
-      '&.Mui-focused fieldset': {
-        borderColor: colors.click_color,
-      },
-    },
-  },
-})(TextField);
+import { getColor } from '../../config/ColorVariables';
 
 const Search = () => {
+  const isLightThemeOn = useSelector(state => state.isLightThemeOn);
+  const click_color = getColor('click_color', isLightThemeOn);
+  const CssTextField = withStyles({
+    root: {
+      '& label.Mui-focused': {
+        color: click_color,
+      },
+      '& .MuiOutlinedInput-root': {
+        '& fieldset': {
+          borderColor: getColor('border_color', isLightThemeOn),
+        },
+        '&:hover fieldset': {
+          borderColor: getColor('hover_color', isLightThemeOn),
+        },
+        '&.Mui-focused fieldset': {
+          borderColor: click_color,
+        },
+      },
+    },
+  })(TextField);
+
   const handleSearchInput = e => {
     // Store the search string and search ??
     const { value } = e.target;

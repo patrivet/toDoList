@@ -25,5 +25,6 @@
 }
 
 .description_submit {
+  /* Used to set colour of add toDo button */
   background-color: var(--primary-color) !important;
 }
