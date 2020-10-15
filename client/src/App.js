@@ -12,10 +12,10 @@ function App() {
   return (
     <div className="AppContainer">
       <Provider store={store}>
-        <div className="App">
-          <Header />
-          <SubHeader />
-          <ToDoList />
+        <Header />
+        <SubHeader />
+        <ToDoList />
+        <div className="AppContainer__toDoListControls">
           <ToDoForm />
           <ColorThemeToggle />
         </div>

@@ -17,6 +17,13 @@ h1 {
   pointer-events: none;
 }
 
+.AppContainer__toDoListControls {
+  /* Bottom fix position the toDoForm and themeToggle */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
