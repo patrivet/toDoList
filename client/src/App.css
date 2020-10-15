@@ -1,9 +1,15 @@
 @import './App-variables.css';
 
-.AppContainer {
+body {
   background-color: var(--background-color);
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+.AppContainer {
   color: var(--text-color);
-  height: 100vh;
 }
 
 .App-logo {

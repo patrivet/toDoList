@@ -30,7 +30,7 @@ const ColorThemeToggle = () => {
   const handleChange = () => {
     store.dispatch(toggleColorTheme(!isLightThemeOn));
     // Toggle the dark-theme css class on the root component
-    document.querySelector('.AppContainer').classList.toggle('dark-theme');
+    document.querySelector('body').classList.toggle('dark-theme');
   };
 
   return (

@@ -7,7 +7,7 @@
 }
 
 /* Colors for light-theme */
-.AppContainer {
+body {
   --text-color: black;
   --background-color: var(--tenary-color);
   --icon-color: black;
@@ -22,7 +22,7 @@
 }
 
 /* Dark theme colors */
-.AppContainer.dark-theme {
+body.dark-theme {
   --primary-color: #bc86fc; /* Purple 200 */
   --text-color: white;
   --background-color: #121212; /* dark grey */
