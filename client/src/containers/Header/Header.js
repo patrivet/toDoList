@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="header__iconAndTitle">
-        <img className="header__icon" src={toDoIcon} />
+        <img className="header__icon" src={toDoIcon} alt="toDoList_icon" />
         <h1 className="header__title">To Do List</h1>
       </div>
       <div className="header__search">

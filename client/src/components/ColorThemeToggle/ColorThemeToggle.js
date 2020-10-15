@@ -5,7 +5,6 @@ import { useSelector } from 'react-redux';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Switch from '@material-ui/core/Switch';
 import { withStyles } from '@material-ui/core/styles';
-import { purple } from '@material-ui/core/colors';
 import { getColor } from '../../config/ColorVariables';
 import './ColorThemeToggle.css';
 

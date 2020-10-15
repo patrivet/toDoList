@@ -1,5 +1,5 @@
 import React from 'react';
-import { searchToDos, toggleColorTheme } from '../../actions';
+import { searchToDos } from '../../actions';
 import store from '../../store';
 import { useSelector } from 'react-redux';
 import './Search.css';
@@ -30,7 +30,7 @@ const Search = () => {
   })(TextField);
 
   const handleSearchInput = e => {
-    // Store the search string and search ??
+    // Get the search string and dispatch
     const { value } = e.target;
     store.dispatch(searchToDos(value));
   };
