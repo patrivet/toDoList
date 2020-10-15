@@ -4,7 +4,19 @@
   align-items: flex-start;
 }
 
+.header__iconAndTitle {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
 .header__icon {
   margin-left: 10px;
   margin-top: 10px;
+  margin-right: 20px;
+}
+
+.header__title {
+  font-family: 'Pacifico', cursive;
+  margin-top: 5px;
 }
