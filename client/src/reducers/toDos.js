@@ -1,4 +1,5 @@
 import * as actions from '../actions/actionTypes';
+
 const initialState = {
   toDos: [],
   filter: 'all',
@@ -26,6 +27,16 @@ function toDos(state = initialState, action) {
           },
         ],
       };
+    /* NOTE: refactoring to immer below - not yet working:-
+        return produce(state, draftState => {
+          console
+          draftState.toDos.push({
+            id: action.id,
+            description: action.payload.description,
+            isComplete: false,
+            created: Date.now(),
+          });
+        }); */
 
     case actions.TOGGLE_TODO:
       // return the updated state (ie. an object with toDos array)
