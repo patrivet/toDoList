@@ -1,2 +1,3 @@
-# toDoList
-A traditional to-do-list application, utilising Redux inside React.
+# to-do-List
+A traditional to-do-list application, using React, Redux and MaterialUI.
+
