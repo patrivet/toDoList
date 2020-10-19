@@ -2,7 +2,6 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import ToDoItem from '../../components/ToDoItem';
 import './ToDoList.css';
-let nextId = 0;
 
 const ToDoList = () => {
   // Get the toDos from the store.
@@ -36,7 +35,7 @@ const ToDoList = () => {
           /* Sort toDos by creation date */
           .sort((a, b) => (a.created < b.created ? 1 : -1))
           .map(toDoItem => {
-            return <ToDoItem key={++nextId} toDo={toDoItem} />;
+            return <ToDoItem key={toDoItem.id} toDo={toDoItem} />;
           })}
       </div>
     </div>

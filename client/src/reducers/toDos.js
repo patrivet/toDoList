@@ -69,6 +69,12 @@ function toDos(state = initialState, action) {
         isLightThemeOn: action.payload.toggleSetting,
       };
 
+    case actions.ADD_TODOS:
+      return {
+        ...state,
+        toDos: action.payload.todos,
+      };
+
     // All other action types, or none specified; return state/store
     default:
       return state;

@@ -40,3 +40,10 @@ export const toggleColorTheme = toggleSetting => ({
     toggleSetting,
   },
 });
+
+export const addToDos = todos => ({
+  type: actions.ADD_TODOS,
+  payload: {
+    todos,
+  },
+});
