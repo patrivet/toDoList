@@ -25,4 +25,5 @@ Created by:  Pat Rivet :: [Github](https://github.com/patrivet/) :: [LinkedIn](h
 - Allow colour scheme to be chosen.
 - Ability to mark one to-do as active, allocate a duration and be notified of the duration countdown and ending.
 - Make fully responsive.
-- Persist to-dos to local storage
+- Ability to delete a to-do
+- Add some animation
