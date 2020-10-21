@@ -1,5 +1,5 @@
 import * as actions from './actionTypes';
-let nextId = 0;
+import { v4 as uuidv4 } from 'uuid';
 
 /*
   Action 1: AddToDo: this func returns an object,
@@ -7,7 +7,7 @@ let nextId = 0;
 */
 export const addToDo = description => ({
   type: actions.ADD_TODO, // Past tense could instead be used: "TO_DO_ADDED"
-  id: nextId++,
+  id: uuidv4(),
   payload: {
     description,
   },
