@@ -43,13 +43,6 @@ const ToDoForm = () => {
     }
   };
 
-  // Currently not being used as onChange on input wasn't firing for a duplicate value.
-  // const handleToDo = event => {
-  //   const { value } = event.target;
-  //   // If there is an toDo entered -store here.
-  //   toDo = value;
-  // };
-
   return (
     <form onSubmit={handleSubmit} id="toDoForm">
       <CssTextField
