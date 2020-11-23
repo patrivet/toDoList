@@ -7,7 +7,7 @@ Created by:  Pat Rivet :: [Github](https://github.com/patrivet/) :: [LinkedIn](h
 
 ## Screenshots:
 ![Screenshot one](/assets/to-do-list-lightTheme.png)
-![Screenshot two](/assets/to-do-list-darkTheme.png)
+![Screenshot two](/assets/to-do-list-dark-Theme.png)
 
 ## Installation
 
