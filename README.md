@@ -1,5 +1,7 @@
 # to-do list
-A traditional to-do list application, using React, Redux and MaterialUI.
+A traditional to-do list application, including integration with local storage and a light/dark theme.
+
+Built with React, Redux and MaterialUI.
 
 See the live app [here](https://todolist-patrivet.netlify.app/) 
 
