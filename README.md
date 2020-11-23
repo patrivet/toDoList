@@ -6,7 +6,7 @@ See the live app [here](https://todolist-patrivet.netlify.app/)
 Created by:  Pat Rivet :: [Github](https://github.com/patrivet/) :: [LinkedIn](https://www.linkedin.com/in/pat-rivet/)
 
 ## Screenshots:
-![Screenshot one](/assets/to-do-list-whiteTheme.png)
+![Screenshot one](/assets/to-do-list-lightTheme.png)
 ![Screenshot two](/assets/to-do-list-darkTheme.png)
 
 ## Installation
